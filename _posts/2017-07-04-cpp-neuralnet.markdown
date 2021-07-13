@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "Neural Network C++"
-excerpt: "Mungkin kamu akan banyak menemukan tulisan seperti ini di internet, akan tetapi saya akan mengulangnya untuk tujuan belajar yang lebih baik. Kode C++ ini akan menunjukkan tugas supervised learning menggunakan neural network yang sangat sederhana."
+excerpt: "Implementasi supervised learning pada neural network sederhana dengan C++"
 date:   2017-07-04 22:00:00
 ---
 
