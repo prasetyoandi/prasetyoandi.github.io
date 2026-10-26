@@ -1,14 +1,18 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-  </head>
-  <body>
-    <h3>
-      <p style="font-family: Arial">
-        Stay awhile and listen! If you’re reading this, you must be lost. I am sorry for your misfortune. But while I have you, I could help passing your time. I love to waste my time on ridiculous engineering projects, the notes of which are jotted down on <a href="https://prasetyoandi.github.io/blog/">this blog</a>
-      </p>
-    </h3>
-  </body>
-</html>
+---
+layout: default
+---
+
+<div class="home">
+  
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <br>
+        {{ post.excerpt }}
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
